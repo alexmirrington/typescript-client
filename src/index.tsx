@@ -1,10 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './components/app';
+import React from "react";
+import ReactDOM from "react-dom";
+import Greeting from "./components/greeting";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App compiler="TypeScript" framework="React" />
+    <Greeting compiler="TypeScript" framework="React" />
   </React.StrictMode>,
-  document.getElementById("content")
+  document.getElementById("content"),
 );
