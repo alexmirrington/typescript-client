@@ -5,12 +5,13 @@
   "main": "server.js",
   "private": true,
   "scripts": {
-    "build": "webpack -p",
+    "start": "node server.js",
+    "build": "npm run build:prod",
+    "watch": "concurrently -k -p \"[{name}]\" -n \"Typescript,Node\" -c \"cyan.bold,green.bold\" \"npm run watch:ts\" \"npm run watch:node\"",
+    "build:prod": "webpack -p",
     "build:dev": "webpack -d --devtool eval-source-map",
-    "watch": "concurrently -k -p \"[{name}]\" -n \"Typescript,Node\" -c \"cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run watch-node\"",
-    "watch-ts": "webpack -d --devtool eval-source-map --watch",
-    "watch-node": "nodemon server.js",
-    "start": "node server.js"
+    "watch:ts": "webpack -d --devtool eval-source-map --watch",
+    "watch:node": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
     "@types/react": "^16.9.41",
     "@types/react-dom": "^16.9.8",
     "concurrently": "^5.2.0",
+    "html-webpack-plugin": "^4.3.0",
     "nodemon": "^2.0.4",
     "ts-loader": "^7.0.5",
     "typescript": "^3.9.6",

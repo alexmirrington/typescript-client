@@ -1,9 +1,10 @@
-import * as React from "react";
-import * as ReactDOM from "react-dom";
-
-import Hello from './components/hello'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './components/app';
 
 ReactDOM.render(
-    <Hello compiler="TypeScript" framework="React" />,
-    document.getElementById("content")
+  <React.StrictMode>
+    <App compiler="TypeScript" framework="React" />
+  </React.StrictMode>,
+  document.getElementById("content")
 );

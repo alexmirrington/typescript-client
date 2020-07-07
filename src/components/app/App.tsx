@@ -1,11 +1,11 @@
-import * as React from "react";
+import React from "react";
 
-export interface HelloProps {
+export interface AppProps {
   compiler: string;
   framework: string;
 }
 
-const Hello = (props: HelloProps): JSX.Element => {
+const App = (props: AppProps): JSX.Element => {
   return (
     <h1>
       Hello from {props.compiler} and {props.framework}!
@@ -13,4 +13,4 @@ const Hello = (props: HelloProps): JSX.Element => {
   );
 };
 
-export default Hello;
+export default App;
