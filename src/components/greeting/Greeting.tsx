@@ -7,9 +7,9 @@ export interface GreetingProps {
 
 const Greeting = (props: GreetingProps): JSX.Element => {
   return (
-    <h1>
+    <p>
       Hello from {props.compiler} and {props.framework}!
-    </h1>
+    </p>
   );
 };
 
