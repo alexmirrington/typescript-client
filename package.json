@@ -1,15 +1,14 @@
 {
   "name": "typescript-client",
   "version": "1.0.0",
-  "description": "A TypeScript client boilerplate with NPM and Webpack.",
+  "description": "A web client boilerplate built on TypeScript, React and Webpack.",
   "main": "server.js",
   "private": true,
   "scripts": {
-    "build": "npm run build:prod",
-    "dev": "concurrently -k -p \"[{name}]\" -n \"Typescript,Node\" -c \"cyan.bold,green.bold\" \"npm run build:watch\" \"npm run start:watch\"",
+    "build": "webpack -p",
     "start": "node server.js",
     "test": "jest --coverage --verbose",
-    "build:prod": "webpack -p",
+    "dev": "concurrently -k -p \"[{name}]\" -n \"Typescript,Node\" -c \"cyan.bold,green.bold\" \"npm run build:watch\" \"npm run start:watch\"",
     "build:watch": "webpack -d --devtool eval-source-map --watch",
     "start:watch": "nodemon server.js",
     "test:watch": "jest --watch"
@@ -62,7 +61,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,ts,tsx}": [
+    "*.{js,jsx,ts,tsx}": [
       "eslint --fix"
     ]
   }
