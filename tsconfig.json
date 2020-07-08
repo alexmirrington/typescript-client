@@ -24,10 +24,9 @@
     "experimentalDecorators": true            /* Enable experimental support for ES decorators*/
   },
   "include": [
-    "src/**/*",
-    "tests/**/*"
+    "src/**/*"
   ],
   "exclude": [
-    "node_modules/**/*"
+    "**/__tests__"
   ]
 }
