@@ -3,7 +3,7 @@ module.exports = {
   globals: {
     // Point ts-jest to jsconfig for transpilation.
     "ts-jest": {
-      tsConfig: "tsconfig.json",
+      tsconfig: "tsconfig.json",
     },
   },
   transform: {
