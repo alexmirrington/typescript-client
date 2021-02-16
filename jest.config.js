@@ -1,13 +1,13 @@
 module.exports = {
   preset: "ts-jest",
   globals: {
-    // Point ts-jest to jsconfig for transpilation.
+    // Point ts-jest to tsconfig for transpilation.
     "ts-jest": {
       tsconfig: "tsconfig.json",
     },
   },
   transform: {
-    // Regex selects .tsx+ files to be transpiled to .jsx? before running.
+    // Regex selects .tsx? files to be transpiled to .jsx? before running.
     "^.+\\.tsx?$": "ts-jest",
   },
   testMatch: [
