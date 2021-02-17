@@ -12,7 +12,7 @@
     "build:watch": "webpack -d --devtool eval-source-map --watch",
     "start:watch": "nodemon server.js",
     "test:watch": "jest --watch",
-    "postinstall": "husky install"
+    "postinstall": "husky install .config/husky"
   },
   "repository": {
     "type": "git",
