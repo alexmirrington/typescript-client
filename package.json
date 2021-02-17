@@ -5,11 +5,11 @@
   "main": "server.js",
   "private": true,
   "scripts": {
-    "build": "webpack -p",
+    "build": "webpack --mode production",
     "start": "node server.js",
     "test": "jest --coverage --verbose",
     "dev": "concurrently -k -p \"[{name}]\" -n \"Typescript,Node\" -c \"cyan.bold,green.bold\" \"npm run build:watch\" \"npm run start:watch\"",
-    "build:watch": "webpack -d --devtool eval-source-map --watch",
+    "build:watch": "webpack --mode development --watch --devtool eval-source-map ",
     "start:watch": "nodemon server.js",
     "test:watch": "jest --watch",
     "postinstall": "husky install .config/husky"
