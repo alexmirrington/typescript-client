@@ -7,6 +7,12 @@
       alt="GitHub workflow status: main"
     />
   </a>
+  <a href="https://github.com/prettier/prettier">
+    <img
+      src="https://img.shields.io/badge/styled_with-prettier-ff69b4.svg"
+      alt="Styled with Prettier"
+    />
+  </a>
 </p>
 
 A web client boilerplate built on TypeScript, React and Webpack.
