@@ -1,6 +1,6 @@
 # Typescript Client
 
-![tests](https://github.com/alexmirrington/typescript-client/workflows/tests/badge.svg)
+![build](https://github.com/alexmirrington/typescript-client/workflows/main/badge.svg)
 
 A web client boilerplate built on TypeScript, React and Webpack.
 
