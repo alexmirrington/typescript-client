@@ -1,4 +1,4 @@
-name: tests
+name: ci
 
 on: [ push, pull_request ]
 
@@ -7,7 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: ['12', '14']
+        node-version: ['12', '14', '15']
+    name: Node.js v${{ matrix.node }}
     steps:
     - uses: actions/checkout@v2
     - name: Set up Node.js ${{ matrix.node-version }}
