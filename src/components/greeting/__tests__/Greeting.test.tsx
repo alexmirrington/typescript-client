@@ -10,10 +10,10 @@ describe("Greeting Component", () => {
     const framework = "React";
 
     const { getByText } = render(
-      <Greeting compiler={compiler} framework={framework} />,
+      <Greeting compiler={compiler} framework={framework} />
     );
     expect(
-      getByText(`Hello from ${compiler} and ${framework}!`),
+      getByText(`Hello from ${compiler} and ${framework}!`)
     ).toBeInTheDocument();
   });
 });

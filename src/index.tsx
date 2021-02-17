@@ -6,5 +6,5 @@ ReactDOM.render(
   <React.StrictMode>
     <Greeting compiler="TypeScript" framework="React" />
   </React.StrictMode>,
-  document.getElementById("content"),
+  document.getElementById("content")
 );
