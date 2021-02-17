@@ -57,7 +57,10 @@
     "react-dom": "^17.0.1"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": "eslint",
-    "*.{js,jsx,ts,tsx,md,html,css}": "prettier"
+    "*.{js,jsx,ts,tsx}": [
+      "eslint",
+      "prettier -c"
+    ],
+    "*.{md,html,css}": "prettier -c"
   }
 }
