@@ -8,10 +8,10 @@
     "build": "webpack --mode production",
     "start": "node server.js",
     "test": "jest --coverage --verbose",
+    "lint": "eslint && prettier -c .",
     "dev": "concurrently -k -p \"[{name}]\" -n \"Typescript,Node\" -c \"cyan.bold,green.bold\" \"npm run build:watch\" \"npm run start:watch\"",
     "build:watch": "webpack --mode development --watch --devtool eval-source-map ",
     "start:watch": "nodemon server.js",
-    "test:watch": "jest --watch",
     "postinstall": "husky install .config/husky"
   },
   "repository": {
@@ -37,7 +37,6 @@
     "concurrently": "^5.2.0",
     "eslint": "^7.4.0",
     "eslint-config-prettier": "^7.2.0",
-    "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.3",
     "html-webpack-plugin": "^5.1.0",
     "husky": "^5.0.0",
