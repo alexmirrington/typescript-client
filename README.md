@@ -1,6 +1,13 @@
 # Typescript Client
 
-![build](https://github.com/alexmirrington/typescript-client/workflows/main/badge.svg)
+<p align="center">
+  <a href="https://github.com/alexmirrington/typescript-client/actions?query=workflow%3Amain">
+    <img
+      src="https://img.shields.io/github/workflow/status/alexmirrington/typescript-client/main?logo=GitHub"
+      alt="GitHub workflow status: main"
+    />
+  </a>
+</p>
 
 A web client boilerplate built on TypeScript, React and Webpack.
 
