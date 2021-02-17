@@ -4,9 +4,14 @@
 
 A web client boilerplate built on TypeScript, React and Webpack.
 
+## Design Decisions
+
+- **Automate development processes**: Set up your tooling properly from the beginning and save yourself future headaches.
+- **Minimise configuration**: Utilise packages that use sane defaults out of the box. Less configuration means a cleaner workspace and less time-wasting.
+
 ## Getting Started
 
-### `npm` Scripts
+### Scripts
 
 There are four main `npm` scripts that you should familiarise yourself with:
 
