@@ -1,4 +1,5 @@
 module.exports = {
+  testEnvironment: "jsdom",
   preset: "ts-jest",
   globals: {
     // Point ts-jest to tsconfig for transpilation.
